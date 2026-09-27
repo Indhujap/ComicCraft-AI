@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicCraft AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">🎨 ComicCraft AI</div>
+    <div class="nav-text">AI Comic Generator</div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">✨ AI POWERED</span>
+
+            <h1>Create Your Own <span>AI Comic</span></h1>
+
+            <p>
+                Turn your imagination into a beautiful comic story
+                using Artificial Intelligence.
+            </p>
+        </div>
+    </section>
+
+    <section class="card">
+
+        <h2>📝 Create Your Story</h2>
+
+        <p class="subtitle">
+            Tell us your idea and customize your comic.
+        </p>
+
+        <form action="/generate" method="post">
+
+            <div class="form-group">
+                <label for="prompt">💡 Story Idea</label>
+
+                <textarea
+                    id="prompt"
+                    name="prompt"
+                    rows="5"
+                    placeholder="Example: A cute monkey opens a banana shop in a village..."
+                    required></textarea>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="character">👤 Main Character</label>
+
+                    <input
+                        type="text"
+                        id="character"
+                        name="character"
+                        placeholder="Example: Cute monkey">
+                </div>
+
+                <div class="form-group">
+                    <label for="setting">🌄 Setting</label>
+
+                    <input
+                        type="text"
+                        id="setting"
+                        name="setting"
+                        placeholder="Example: Village">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="style">🎨 Comic Style</label>
+
+                    <select id="style" name="style">
+                        <option value="cartoon">Cute Cartoon</option>
+                        <option value="anime">Anime</option>
+                        <option value="comic">Classic Comic</option>
+                        <option value="watercolor">Watercolor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="panels">📖 Number of Panels</label>
+
+                    <select id="panels" name="panels">
+                        <option value="4">4 Panels</option>
+                        <option value="5" selected>5 Panels</option>
+                        <option value="6">6 Panels</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button type="submit" class="generate-btn">
+                ✨ Generate My Comic
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature">
+            <div class="feature-icon">🤖</div>
+            <h3>AI Story</h3>
+            <p>AI creates an engaging story from your idea.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎨</div>
+            <h3>AI Images</h3>
+            <p>Generate unique comic illustrations.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">📄</div>
+            <h3>PDF Export</h3>
+            <p>Download your finished comic as a PDF.</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 ComicCraft AI • Created with AI ✨</p>
+</footer>
+
+</body>
+</html>
